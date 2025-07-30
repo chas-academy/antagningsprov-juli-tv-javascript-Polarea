@@ -1,17 +1,19 @@
 
 
 function uppg8(){
+const persons = [
+    {name: 'Anna', age: 20},
+    {name: 'Björn', age: 50},
+    {name: 'Cecilia', age: 40},
+    {name: 'David', age: 35},
+    {name: 'Eva', age: 67}
+]
 
-// skapa en array med fem person obkjet
-// varje person objekt ska ha två properties, name och age
+function personsOver30(people){
+people.map(person => person.age > 30 ? console.log(person.name) : null);
+}
 
-// skapa en fuktion som tar in en array som argument
-// skapa ett konditionsvillkor som gör att det bara är namnet på personerna som är
-//  över 30 år som skrivs ut i konsolen
-
-// anropa funktionen och skicka med arrayen som argument
-
-
+personsOver30(persons);
 }
 
 module.exports = { uppg8 };
